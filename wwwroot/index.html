@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта клиента</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Привет,</p>
+            <h1 id="userName">Гость</h1>
+        </div>
+        <p class="subtitle">Это твоя карта</p>
+        <div class="card">
+            <p class="card-title">TEST CARD</p>
+            <p class="balance-title">Баланс</p>
+            <p class="balance" id="balance">Загрузка...</p>
+            <div class="card-info">
+                <p>Номер карты: <span id="cardNumber">Загрузка...</span></p>
+                <p>Дата сторчания: <span id="cardExpiry">Загрузка...</span></p>
+            </div>
+            <svg id="barcode"></svg>  <!-- 🔥 Тут будет штрих-код -->
+            <p class="phone-number" id="phoneNumber">Загрузка...</p>
+        </div>
+        <p class="cashier-text">ПОКАЖИ КАССИРУ</p>
+    </div>
+    <script src="fetchUserData.js"></script>
+</body>
+</html>
