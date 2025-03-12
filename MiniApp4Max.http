@@ -1,0 +1,6 @@
+@MiniApp4Max_HostAddress = http://localhost:5159
+
+GET {{MiniApp4Max_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
